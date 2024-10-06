@@ -9,13 +9,12 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    macros {
-        space: space {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp J &kp K &kp L>, <&macro_press>, <&space>;
+    combos {
+        compatible = "zmk,combos";
 
-            label = "SPACE";
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <19 20 21>;
         };
     };
 
